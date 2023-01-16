@@ -1,0 +1,23 @@
+def keyPressed():
+    gestionTouches(key,True)
+    
+def keyReleased():
+    gestionTouches(key,False)
+    
+def gestionTouches(touche,relachementOuAppui):
+    if touche == 'a' :
+        gl.turnLeft=relachementOuAppui
+    if touche == 'd' :
+        gl.turnRight=relachementOuAppui
+    if touche == 'z' :
+        gl.turbo=relachementOuAppui
+    if touche == 'p' :
+        missile()
+    if touche == 'o' :
+        flare()
+    if touche == 'k' :
+        special()
+    if touche == 'j' :
+        gl.gun=relachementOuAppui
+    if touche == ENTER :
+        entrer()
